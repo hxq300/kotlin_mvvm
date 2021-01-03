@@ -1,0 +1,3 @@
+rootProject.name='kotlin_mvvm'
+include ':app'
+include ':kotlin_bosic'
