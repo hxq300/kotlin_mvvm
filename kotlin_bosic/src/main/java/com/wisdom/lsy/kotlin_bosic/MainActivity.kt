@@ -3,13 +3,18 @@ package com.wisdom.lsy.kotlin_bosic
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.wisdom.lsy.kotlin_bosic.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
 
+/**
+ * TODO 笔记：
+ * 单例 和 伴生对象
+ * 伴生对象相当于Java中的static静态方法  @JvmFields修饰属性 @JvmStatic修饰方法
+ *  object修饰的类 是单例
+ */
 @Suppress("UNREACHABLE_CODE")
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     var mTestBean: TestBean? = null
@@ -42,7 +47,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     mDataList!!.add(TestBean("避暑大王", "妖", 500, true))
                 }
                 mTestBeanAdapter?.notifyDataSetChanged()
-                Toast.makeText(this,"--------",Toast.LENGTH_SHORT).show()
             }
 
         }
