@@ -40,4 +40,5 @@ dependencies {
 
 
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.24'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
 }

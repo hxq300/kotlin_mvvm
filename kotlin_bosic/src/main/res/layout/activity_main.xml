@@ -15,16 +15,19 @@
         tools:context=".MainActivity"
         android:orientation="vertical">
         <TextView
+            android:id="@+id/tv_name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center"
-            android:textSize="20sp"/>
-        <view
-            class="androidx.appcompat.app.AlertController$RecycleListView"
+            android:textSize="20sp"
+            android:text="@{testBean.name}"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"/>
         <Button
+            android:id="@+id/btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
