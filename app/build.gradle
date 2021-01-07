@@ -42,7 +42,7 @@ android {
 }
 
 def releaseTime() {
-    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("GMT+08:00"))
+    return new Date().format("yyyyMMddhhmmss", TimeZone.getTimeZone("GMT+08:00"))
 }
 
 dependencies {
