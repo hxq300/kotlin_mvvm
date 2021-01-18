@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 mTestBeanAdapter?.notifyDataSetChanged()
             }
-            R.id.btn2 ->{
-                for (i in 0..10 )
+            R.id.btn2 -> {
+                for (i in 0..10)
                     println(i)
 
                 for (i in 10 downTo 0)
@@ -65,8 +65,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         }
     }
-
-
 
 
 }
